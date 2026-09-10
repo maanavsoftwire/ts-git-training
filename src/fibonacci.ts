@@ -25,7 +25,7 @@ export const computeFibonacciNumber = (position: number): number => {
 
 const computeNegativeFibonacci = (position: number): number => {
     if (position >= 0) {
-        throw new Error(`Position must be less than zero! Received: ${position}.`);
+        throw new Error(`Position must not be less than zero! Received: ${position}.`);
     }
     const resultIsNegative = position % 2 === 0;
     const absoluteResult = computeFibonacciNumber(-position);
